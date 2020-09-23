@@ -4,7 +4,8 @@
 
 <script>
 //http://lbsyun.baidu.com/index.php?title=jspopularGL/guide/custom
-import BMapGL from 'BMapGL'
+import BMapGL from 'BMapGL';
+// import zqJson from '../../public/json/zq.json';
 
 export default {
   name: 'HelloWorld',
@@ -28,6 +29,12 @@ export default {
       map.addControl(scaleCtrl);
       let zoomCtrl = new BMapGL.ZoomControl(); //添加缩放控件
       map.addControl(zoomCtrl);
+
+      //应用地图样式(通过发布样式) 
+      map.setMapStyleV2({
+        styleId: "ed883c44131202b810010c6583ce0359"
+      });
+      // map.setMapStyleV2({styleJson:zqJson}); //通过Json文件形式
     }
   },
   mounted(){
