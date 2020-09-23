@@ -3,6 +3,7 @@
 </template>
 
 <script>
+//http://lbsyun.baidu.com/index.php?title=jspopularGL/guide/custom
 import BMapGL from 'BMapGL'
 
 export default {
